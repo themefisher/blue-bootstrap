@@ -1,0 +1,263 @@
+.sl-slide, .sl-slides-wrapper, .sl-slide-inner {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+.sl-slider-wrapper {
+	width: 100%;
+	height: 600px;
+	overflow: hidden;
+	position: relative;
+}
+
+
+
+.bg-img {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+}
+
+/* Custom navigation arrows */
+
+.nav-arrows span {
+	position: absolute;
+	z-index: 2000;
+	top: 50%;
+	width: 40px;
+	height: 40px;
+	border: 8px solid #ddd;
+	border: 8px solid rgba(150,150,150,0.4);
+	text-indent: -90000px;
+	margin-top: -40px;
+	cursor: pointer;
+	
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.nav-arrows span:hover {
+	border-color: rgba(150,150,150,0.9);
+}
+
+.nav-arrows span.nav-arrow-prev {
+	left: 5%;
+	border-right: none;
+	border-top: none;
+}
+
+.nav-arrows span.nav-arrow-next {
+	right: 5%;
+	border-left: none;
+	border-bottom: none;
+}
+
+#nav-arrows > a {
+  border: 1px solid #fff;
+  color: #fff;
+  display: block;
+  height: 60px;
+  line-height: 76px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 60px;
+  z-index: 20;
+  margin-top: -30px;
+
+    -webkit-transition: all 0.5s ease 0s;
+       -moz-transition: all 0.5s ease 0s;
+        -ms-transition: all 0.5s ease 0s;
+         -o-transition: all 0.5s ease 0s;
+            transition: all 0.5s ease 0s;
+}
+
+#nav-arrows > a.sl-prev {
+	left: 50px;
+}
+
+#nav-arrows > a.sl-next {
+	right: 50px;
+}
+
+#nav-arrows > a.sl-next:hover {
+	background-color: #009EE3;
+	border-color: #009EE3;
+	color: #fff;
+}
+
+/* Custom navigation dots */
+
+.nav-dots {
+	text-align: center;
+	position: absolute;
+	bottom: 2%;
+	height: 30px;
+	width: 100%;
+	left: 0;
+	z-index: 1000;
+}
+
+.nav-dots span {
+	display: inline-block;
+	position: relative;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	margin: 3px;
+	background: #ddd;
+	background: rgba(150,150,150,0.4);
+	cursor: pointer;
+	box-shadow: 
+		0 1px 1px rgba(255,255,255,0.4), 
+		inset 0 1px 1px rgba(0,0,0,0.1);
+}
+
+.nav-dots span {
+	background: rgba(150,150,150,0.1);
+	margin: 6px;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+	box-shadow: 
+		0 1px 1px rgba(255,255,255,0.4), 
+		inset 0 1px 1px rgba(0,0,0,0.1),
+		0 0 0 2px rgba(255,255,255,0.5);
+}
+
+.nav-dots span.nav-dot-current,
+.nav-dots span:hover {
+	box-shadow: 
+		0 1px 1px rgba(255,255,255,0.4), 
+		inset 0 1px 1px rgba(0,0,0,0.1),
+		0 0 0 5px rgba(255,255,255,0.5);
+}
+
+.nav-dots span.nav-dot-current:after {
+	content: "";
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	top: 3px;
+	left: 3px;
+	border-radius: 50%;
+	background: rgba(255,255,255,0.8);
+}
+
+.bg-img-1 {
+	background-image: url(../img/slider/banner.jpg);
+}
+.bg-img-2 {
+	background-image: url(../img/slider/affinity.jpeg);
+}
+.bg-img-3 {
+	background-image: url(../img/slider/cinelli.jpeg);
+}
+
+
+/* Animations for content elements */
+
+.sl-trans-elems .caption-content h2 {
+	-webkit-animation: moveUp 1s ease-in-out both;
+	-moz-animation: moveUp 1s ease-in-out both;
+	-o-animation: moveUp 1s ease-in-out both;
+	-ms-animation: moveUp 1s ease-in-out both;
+	animation: moveUp 1s ease-in-out both;
+}
+.sl-trans-elems .caption-content span,
+.sl-trans-elems .caption-content a {
+	-webkit-animation: fadeIn 0.5s linear 0.5s both;
+	-moz-animation: fadeIn 0.5s linear 0.5s both;
+	-o-animation: fadeIn 0.5s linear 0.5s both;
+	-ms-animation: fadeIn 0.5s linear 0.5s both;
+	animation: fadeIn 0.5s linear 0.5s both;
+}
+
+.sl-trans-back-elems .caption-content h2 {
+	-webkit-animation: fadeOut 1s ease-in-out both;
+	-moz-animation: fadeOut 1s ease-in-out both;
+	-o-animation: fadeOut 1s ease-in-out both;
+	-ms-animation: fadeOut 1s ease-in-out both;
+	animation: fadeOut 1s ease-in-out both;
+}
+.sl-trans-back-elems .caption-content span,,
+.sl-trans-back-elems .caption-content a {
+	-webkit-animation: fadeOut 1s linear both;
+	-moz-animation: fadeOut 1s linear both;
+	-o-animation: fadeOut 1s linear both;
+	-ms-animation: fadeOut 1s linear both;
+	animation: fadeOut 1s linear both;
+}
+
+@-webkit-keyframes moveUp{
+	0% {-webkit-transform: translateY(40px);}
+	100% {-webkit-transform: translateY(0px);}
+}
+@-moz-keyframes moveUp{
+	0% {-moz-transform: translateY(40px);}
+	100% {-moz-transform: translateY(0px);}
+}
+@-o-keyframes moveUp{
+	0% {-o-transform: translateY(40px);}
+	100% {-o-transform: translateY(0px);}
+}
+@-ms-keyframes moveUp{
+	0% {-ms-transform: translateY(40px);}
+	100% {-ms-transform: translateY(0px);}
+}
+@keyframes moveUp{
+	0% {transform: translateY(40px);}
+	100% {transform: translateY(0px);}
+}
+
+@-webkit-keyframes fadeIn{
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+@-moz-keyframes fadeIn{
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+@-o-keyframes fadeIn{
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+@-ms-keyframes fadeIn{
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+@keyframes fadeIn{
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+@-webkit-keyframes fadeOut{
+	0% {opacity: 1;}
+	100% {opacity: 0;}
+}
+@-moz-keyframes fadeOut{
+	0% {opacity: 1;}
+	100% {opacity: 0;}
+}
+@-o-keyframes fadeOut{
+	0% {opacity: 1;}
+	100% {opacity: 0;}
+}
+@-ms-keyframes fadeOut{
+	0% {opacity: 1;}
+	100% {opacity: 0;}
+}
+@keyframes fadeOut{
+	0% {opacity: 1;}
+	100% {opacity: 0;}
+}
