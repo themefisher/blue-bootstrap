@@ -1,4 +1,4 @@
-# Blue - OnePage Bootstrap Business Template
+# Blue - OnePage Bootstrap Business Responsive Template
 
 Looking best place to download Free Onepage Responsive Corporate Template built with HTML5 and CSS3? Themefisher is the destination providing the most efficient, free approach to design or redesign a corporate website. To serve any kind of business needs Blue, the Twitter Bootstrap 3 based Free HTML5/CSS3 responsive template pops out. The template is lightweight, comes with booster speed to load websites fast even in the poor bandwidth. Blue is most downloaded and Bootstrap framework enabled one page HTML theme, best-suited sites like startups, business, agency, corporate agency, corporate, portfolio, showcasing, photography studio, SME business, non-profit organizations, fashion government agencies, personal service, web development firm, web designing firm, and many more.
 
